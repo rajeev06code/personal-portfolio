@@ -24,7 +24,6 @@ const Navbar: React.FC<NavbarProps> = ({
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo/Name */}
           <button
             onClick={() => scrollToSection("hero")}
             className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
@@ -32,7 +31,6 @@ const Navbar: React.FC<NavbarProps> = ({
             RKS
           </button>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
@@ -54,7 +52,6 @@ const Navbar: React.FC<NavbarProps> = ({
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors z-50"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

@@ -1,6 +1,3 @@
-// Education section component
-
-import React from "react";
 import { GraduationCap, ExternalLink } from "lucide-react";
 
 const Education = () => {

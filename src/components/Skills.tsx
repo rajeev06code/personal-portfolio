@@ -1,6 +1,3 @@
-// Skills section component
-
-import React from "react";
 import { Briefcase } from "lucide-react";
 
 const Skills = () => {

@@ -74,12 +74,10 @@ body {
   animation: subtleZoom 20s ease-in-out infinite alternate;
 }
 
-/* Enhance scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* Enhanced card hover effects */
 .hover-card {
   @apply transition-all duration-300;
 }
@@ -146,7 +144,6 @@ html {
   animation-delay: 4s;
 }
 
-/* Add to your existing animations */
 @keyframes shine {
   from {
     background-position: 200% center;

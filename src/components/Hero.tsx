@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Download, MapPin, Phone } from "lucide-react";
+import { Mail, Download } from "lucide-react";
 
 interface HeroProps {
   RESUME_URL: string;
@@ -18,7 +18,6 @@ const Hero: React.FC<HeroProps> = ({ RESUME_URL }) => {
       <div className="container mx-auto px-4 relative pt-20">
         <div className="max-w-5xl mx-auto">
           <div className="space-y-8 md:space-y-12">
-            {/* Welcome badge */}
             <div className="flex justify-center">
               <span className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium animate-fade-in-up border border-white/20">
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
@@ -26,7 +25,6 @@ const Hero: React.FC<HeroProps> = ({ RESUME_URL }) => {
               </span>
             </div>
 
-            {/* Name and title */}
             <div className="space-y-4 text-center">
               <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent animate-gradient-x tracking-tight">
                 Rajeev Kr. Sharma
@@ -36,7 +34,6 @@ const Hero: React.FC<HeroProps> = ({ RESUME_URL }) => {
               </h2>
             </div>
 
-            {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 animate-fade-in-up-delay">
               <a
                 href="mailto:rajeev_sharma15@outlook.com"

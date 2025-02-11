@@ -1,19 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Award,
-  Briefcase,
-  GraduationCap,
-  ExternalLink,
-  Menu,
-  X,
-  Download,
-} from "lucide-react";
-import image from "./assets/WhatsApp Image 2025-02-10 at 11.41.37 PM.jpeg";
+import { useState, useEffect } from "react";
+import { Github, Linkedin, Mail, Menu, X } from "lucide-react";
 import RESUME_URL from "./assets/Rajeev kr. sharma resume.pdf";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -76,7 +62,6 @@ function App() {
               RKS
             </button>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
                 <button
@@ -97,7 +82,6 @@ function App() {
               </a>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               className="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors z-50"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -118,7 +102,6 @@ function App() {
             </button>
           </div>
 
-          {/* Mobile Drawer Navigation */}
           <div
             className={`fixed inset-y-0 right-0 w-[280px] h-[100vh] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
               isMenuOpen ? "translate-x-0" : "translate-x-full"
@@ -129,7 +112,6 @@ function App() {
               {/* Drawer Header */}
               <div className="flex items-center justify-between p-4 border-b"></div>
 
-              {/* Navigation Links */}
               <div className="flex-1 overflow-y-auto py-4">
                 <div className="space-y-2 px-4">
                   {navItems.map((item) => (
@@ -143,7 +125,6 @@ function App() {
                   ))}
                 </div>
 
-                {/* Call to Action */}
                 <div className="px-4 mt-6">
                   <a
                     href="mailto:rajeev_sharma15@outlook.com"
@@ -153,7 +134,6 @@ function App() {
                   </a>
                 </div>
 
-                {/* Social Links */}
                 <div className="mt-8 px-8">
                   <p className="text-sm text-gray-500 mb-4">Connect with me</p>
                   <div className="flex gap-4">
@@ -190,7 +170,6 @@ function App() {
             </div>
           </div>
 
-          {/* Overlay */}
           <div
             className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
               isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
@@ -200,10 +179,8 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <Hero RESUME_URL={RESUME_URL} />
 
-      {/* Main Content */}
       <main className="container mx-auto px-4 py-16 space-y-32">
         <About />
         <Skills />
