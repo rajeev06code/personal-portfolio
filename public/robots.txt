@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajeev-sharma.netlify.app/sitemap.xml 

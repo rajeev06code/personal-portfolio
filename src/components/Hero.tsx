@@ -10,6 +10,8 @@ const Hero: React.FC<HeroProps> = ({ RESUME_URL }) => {
     <header
       id="hero"
       className="relative bg-black text-white overflow-hidden min-h-screen flex items-center py-4"
+      role="banner"
+      aria-label="Portfolio Introduction"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-violet-600 via-purple-600 to-blue-600 opacity-85" />
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072')] bg-cover bg-fixed bg-center mix-blend-overlay opacity-30 animate-subtle-zoom" />
@@ -19,14 +21,21 @@ const Hero: React.FC<HeroProps> = ({ RESUME_URL }) => {
         <div className="max-w-5xl mx-auto">
           <div className="space-y-8 md:space-y-12">
             <div className="flex justify-center">
-              <span className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium animate-fade-in-up border border-white/20">
+              <span
+                className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium animate-fade-in-up border border-white/20"
+                role="text"
+                aria-label="Welcome message"
+              >
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                 Welcome to my portfolio
               </span>
             </div>
 
             <div className="space-y-4 text-center">
-              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent animate-gradient-x tracking-tight">
+              <h1
+                className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent animate-gradient-x tracking-tight"
+                aria-label="Rajeev Kumar Sharma - Senior Software Engineer"
+              >
                 Rajeev Kr. Sharma
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl text-blue-200 font-light animate-fade-in-up">
