@@ -18,6 +18,7 @@ const Skills = () => {
         {[
           { name: "React.js", level: "Expert" },
           { name: "Next.js", level: "Intermediate" },
+          { name: "Angular.js", level: "Intermediate" },
           { name: "TypeScript", level: "Intermediate" },
           { name: "JavaScript (ES6+)", level: "Expert" },
           { name: "Redux Toolkit", level: "Advanced" },

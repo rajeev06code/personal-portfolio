@@ -37,7 +37,7 @@ const Education = () => {
             </div>
           </div>
           <p className="mt-4 text-gray-600">
-            Electrical and Electronics Engineering
+            Electrical and Electronics Engineering (Gold Medalist)
           </p>
         </div>
       </div>
